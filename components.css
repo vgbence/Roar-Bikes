@@ -86,7 +86,7 @@ main p {
 \*------------------------------------*/
 
 .container__cards--left {
-    background-image        : url(/Images/bicycle-1.jpeg);
+    background-image        : url(Images/bicycle-1.jpeg);
     background-size         : cover;
     background-position     : bottom;
     background-blend-mode   : overlay;
@@ -165,7 +165,7 @@ main p {
 \*------------------------------------*/
 
 .footer__logo {
-    width                   : 5rem;
+    width                   : 15rem;
 }
 
 footer p {
