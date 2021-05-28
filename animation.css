@@ -1,0 +1,65 @@
+/**
+ * All the project's animations are trigerred by hover:
+ *
+ * 1) Contact button background color and it's sign color changes
+ * 2) Left card's bicycle icon imitates forward movement
+ * 3) Middle card's cog icon spins around the man's neck
+ * 4) Right card's telephone icon rings
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.navbar__contactbutton:hover { /* [1] */
+    background-color        : var(--font-color-secondary);
+    transition-duration     : 2s;
+}    
+
+.navbar__contactbutton a:hover { /* [1] */
+    color                   : white;
+    transition-duration     : 1s;
+}   
+
+
+
+
+
+/*------------------------------------*\
+  #CONTAINER
+\*------------------------------------*/
+
+.fa-bicycle:hover { /* [2] */
+    animation: .5s linear .5s infinite alternate slideForwardAndBack;
+}
+
+@keyframes slideForwardAndBack { /* [2] */
+    0%      {transform: translate(-3px);}
+    50%     {transform: translate(5px);}
+    100%    {transform: translate(-10px);}
+}
+
+.fa-cog:hover { /* [3] */
+    animation: 1s linear .5s infinite alternate cogRotate;
+}
+
+@keyframes cogRotate { /* [3] */
+    0%      {transform: rotate(0deg)}
+    100%    {transform: rotate(360deg)}
+}    
+
+.fa-phone:hover { /* [4] */
+    animation: .75s linear .5s infinite backwards telephoneRing;
+}
+
+@keyframes telephoneRing { /* [4] */
+    25%     {transform: rotate(15deg)}
+    50%     {transform: rotate(-30deg)}
+    75%     {transform: rotate(10deg)}
+    100%    {transform: rotate(-5deg)}
+}   

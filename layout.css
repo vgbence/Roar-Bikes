@@ -1,0 +1,133 @@
+/**
+* CONTENTS
+*
+* LAYOUT
+* Elements.............Rules for the container and items
+* Modifiers............Media queries for the layout.
+*
+* WHITESPACES
+* Whitespaces..........Whitespaces between items.
+*/
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+body {
+    display                 : grid;
+    grid-template-columns   : repeat(12, 1fr);
+    height                  : 100vh;
+    width                   : 80vw;
+}
+
+header {
+    grid-column-start       : 1;
+    grid-column-end         : 13;
+    grid-row-start          : 1;
+    grid-row-end            : 2;
+}    
+
+.navbar {
+    display                 : grid;
+    grid-template-columns   : repeat(3, 1fr);
+}
+
+    .navbar__logo {
+        grid-column-start       : 1;
+        grid-column-end         : 3;
+        grid-row-start          : 1;
+        grid-row-end            : 2;
+        margin-bottom           : 0.625rem;
+    }
+
+    .navbar__button {
+        display                 : inline-block;
+        padding                 : 0.625rem 1.5rem;
+        margin-top              : 1.875rem;
+        margin-left             : 0.625rem;
+    }
+    
+    .navbar__contactbutton {
+        display                 : inline-block;
+        padding                 : 0.625rem 1.5rem;
+        margin-top              : 1.875rem;
+        margin-left             : 0.625rem;
+    }    
+
+main {
+    display                 : flex;
+    grid-column-start       : 1;
+    grid-column-end         : 13;
+    grid-row-start          : 2;
+    grid-row-end            : 7;
+}
+
+    .main__mediatext {
+        flex                    : 2;
+        padding-right           : 1rem;
+    }
+
+    .main__mediaimg {
+        flex                    : 1;
+    }
+
+.container {
+    grid-column-start       : 1;
+    grid-column-end         : 13;
+    grid-row-start          : 7;
+    grid-row-end            : 11;
+}
+
+    .container__cards {
+        display                 : flex;
+        justify-content         : space-between;
+        text-align              : center;
+    } 
+
+.testemonials {
+    grid-column-start       : 1;
+    grid-column-end         : 13;
+    grid-row-start          : 11;
+    grid-row-end            : 12;
+    display                 : flex;
+    flex-wrap               : wrap;
+    justify-content         : space-between;
+}
+
+footer {  
+    grid-column-start       : 1;
+    grid-column-end         : 13;
+    grid-row-start          : 12;
+    grid-row-end            : 13;
+    text-align              : center;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
+@media (max-width: 700px) {
+    .main__mediaimg {
+      display: none;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/
+
+body {
+    gap: 2.5rem;
+}

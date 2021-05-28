@@ -1,0 +1,177 @@
+/**
+ * CONTENTS
+ *
+ * HEADER
+ *
+ * MAIN
+ *
+ * CONTAINER
+ *
+ * TESTEMONIALS
+ *
+ * FOOTER
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+header {
+    border-bottom           : 1px solid white;
+}
+  
+.navbar__button {
+    display                 : inline-block;
+    float                   : inline-end;
+    padding                 : 10px 25px;
+    margin-top              : 30px;
+    margin-left             : 10px;
+    border                  : 2px solid white;
+    font-weight             : bold;
+}
+
+.navbar__contactbutton {
+    display                 : inline-block;
+    float                   : inline-end;
+    border                  : 2px solid white;
+    padding                 : 10px 25px;
+    margin-top              : 30px;
+    margin-left             : 10px;
+    font-weight             : bold;
+    background-color        : white;
+}
+
+.navbar__contactbutton a {
+    text-decoration         : none;
+    color                   : var(var--font-color-secondary);
+}   
+
+.navbar__button a {
+    text-decoration         : none;
+    color                   : var(--font-color-primary);
+}    
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main p {
+    margin-top           : 1.25rem;
+    color                   : var(--font-color-primary);
+    font-size               : 1.25rem;
+    text-align              : justify;
+    text-justify            : inter-word;
+}
+
+.main__mediaimg--rounded {
+    border-radius           : 50%;
+    box-shadow              : .125rem .2rem .125rem 0 black;
+    filter                  : contrast(125%);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #CONTAINER
+\*------------------------------------*/
+
+.container__cards--left {
+    background-image        : url(/Images/bicycle-1.jpeg);
+    background-size         : cover;
+    background-position     : bottom;
+    background-blend-mode   : overlay;
+    min-height              : 250px;
+    width                   : 30%;
+    border-radius           : 12px 0px;
+    box-shadow              : 2px 3px 2px 0 black;
+}
+
+.container__cards--middle {
+    background-image        : url(images/bicycle-2.jpg);
+    background-size         : cover;
+    background-position     : bottom;
+    background-blend-mode   : overlay;
+    min-height              : 250px;
+    width                   : 30%;
+    border-radius           : 12px 0px;
+    box-shadow              : 2px 3px 2px 0 black;
+}
+
+.container__cards--right {
+    background-image        : url(Images/bicycle-3.jpg);
+    background-size         : cover;
+    background-position     : bottom;
+    background-blend-mode   : overlay;
+    min-height              : 250px;
+    width                   : 30%;
+    border-radius           : 12px 0px;
+    box-shadow              : 2px 3px 2px 0 black;
+}
+
+.container__cards p {
+    color                   : var(--font-color-primary);
+    font-size               : 1.25rem;
+    margin                  : 20px 30px 20px 30px;
+}
+
+.container__cards i {
+    color                   : var(--font-color-primary);
+    padding-top             : 30px;
+    font-size               : 50px;
+}
+
+.container__cards a {
+    color                   : var(--font-color-primary);
+    text-decoration         : none;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TESTEMONIALS
+\*------------------------------------*/
+
+.testemonials__box {
+    width                   : 47%;
+    padding                 : 50px;
+    border                  : 2px solid white;
+    box-sizing              : border-box;
+    margin-top              : 50px;
+}   
+
+.testemonials__box p {
+    color                   : var(--font-color-primary);
+    font-size               : 1.25rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer__logo {
+    width                   : 5rem;
+}
+
+footer p {
+    color                   : var(--font-color-primary);
+}
+
+
+
+

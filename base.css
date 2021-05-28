@@ -1,0 +1,109 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * css-reset.css........Eric Meyers reset
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ * animations.css.......Keyframe rules for the 3 fontawesome icons
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Background...........Background gradient and image position
+ * Box-sizing...........Better default `box-sizing`.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Headings.............H1, H2 font style.
+ *
+ */
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+    --font-color-primary    : rgb(240, 240, 240);
+    --font-color-secondary  : rgb(3, 52, 91);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BACKGROUND
+\*------------------------------------*/
+
+html {
+    background-image        : radial-gradient(circle, rgb(104, 157, 232), #00325a);
+}
+
+body {
+    background-image        : url(Images/image-lion-background.png);
+    background-position     : top;
+    background-repeat       : no-repeat;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+* {
+    box-sizing              : border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #MARGINS
+\*------------------------------------*/
+
+body {
+    margin                  : auto;
+}
+
+header, main {
+    padding-top             : 1rem;
+}    
+
+footer {
+    padding-bottom          : 2rem;
+}
+
+h2 {
+    margin-bottom           : 1rem;
+    margin-top              : 1.25rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1 {
+    color                   : var(--font-color-primary);
+    font-size               : 3rem;
+    text-shadow             : 0 .125rem .125rem rgba(0, 0, 0, 0.268);
+}
+
+h2 {
+    color                   : var(--font-color-primary);
+    font-size               : 2rem;
+}    

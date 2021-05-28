@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roar Bikes - Contact Us</title>
+    <!-- Eric Meyers Reset -->
+    <link rel="stylesheet" href="css-reset.css">
+
+    <!-- favicon image -->
+    <link rel="shortcut icon" href="Images/bike-repair-logo.png" type="image/png">
+
+    <!-- own ccs -->
+    <link rel="stylesheet" href="contact-us-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="navbar__logo">  
+                <a href="index.html">
+                    <img src="Images/logo-roar-bikes.png" alt="Bike repair logo Roar Bikes">
+                </a>                    
+            </div>
+            <div> 
+                <div class="navbar__button">
+                    <a href="#">Book Online</a>
+                </div>
+                <div class="navbar__button">
+                    <a href="#">About</a>
+                </div>
+            </div>   
+        </div>
+    </header>    
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>Please do not hesitate to contact us directly, our team will come back to
+        you within a millisecond to personally give you the desired answers!</p>
+    </main>
+
+    <div class="inputcontainer">
+        <form>
+            <div class="inputwrapper">  
+                <label for="name" class="newline">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Bilbo Zsa'kos">
+            </div>
+            <div class="inputwrapper">
+                <label for="email" class="newline">Email</label>
+                <input type="email" name="email" id="email" placeholder="xyz@sample.com">
+            </div>
+            <div class="inputwrapper">
+                <textarea name="message" id="message" cols="100" rows="2" placeholder="Let us know what you think"></textarea>
+            </div>
+            <div class="inputwrapper">
+                <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                <label for="email-sub" class="emailsub">Sign up or Email Newsletter</label>
+            </div>
+            <div class="inputwrapper">
+                <span>How would you like to be contacted?</span>
+                <input type="radio" name="contact-pref" id="phone" value="phone">
+                <label for="phone" class="radiolabel">Phone</label>
+                <input type="radio" name="contact-pref" id="email" value="email2">
+                <label for="email" class="radiolabel">Email</label>
+            </div>
+            <div class="inputwrapper">
+                <select name="country" id="country" class="country">
+                    <option value="Not-Choosen">Choose country</option>
+                    <option value="Does it matter?">Does it matter?</option>
+                    <option value="Dude, we can pick it up from the whole world!">Dude, we can pick it up from the whole world!</option>
+                </select>
+            </div>
+            <button>SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+</html>
